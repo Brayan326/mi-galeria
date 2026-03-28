@@ -2,25 +2,30 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Galería Eterna</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Fast Food Vargas</title>
     <style>
-        body { font-family: sans-serif; text-align: center; background: #f4f4f4; }
-        .galeria { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 20px; }
-        img { width: 300px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        body { font-family: 'Segoe UI', sans-serif; text-align: center; background: #1a1a1a; color: white; margin: 0; padding: 20px; }
+        h1 { color: #ffcc00; }
+        .galeria { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+        .foto-contenedor { width: 100%; max-width: 500px; background: #2a2a2a; padding: 10px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        img { width: 100%; height: auto; border-radius: 10px; display: block; }
+        p { margin-top: 10px; font-weight: bold; color: #ffcc00; }
     </style>
 </head>
 <body>
-    <h1>Mis Fotos</h1>
+    <h1>🍔 Fast Food Vargas 🍟</h1>
+    <p>Toca las imágenes para verlas en grande</p>
     <div class="galeria">
-        <img src="https://i.ibb.co/rK3zv5TW/image.jpg">
-        <img src="https://i.ibb.co/847NsCF5/image.jpg">
-        <img src="https://i.ibb.co/Mk1tK5MD/image.jpg">
-        <img src="https://i.ibb.co/QvQLjyhY/image.jpg">
-        <img src="https://i.ibb.co/MDyJwW5c/image.jpg">
-        <img src="https://i.ibb.co/xqz8q8bP/image.jpg">
-        <img src="https://i.ibb.co/prZ3dqz5/image.jpg">
-        <img src="https://i.ibb.co/dwy6MshC/image.jpg">
-        <img src="https://i.ibb.co/HfxXM3Ws/image.jpg">
+        <div class="foto-contenedor"><img src="https://i.ibb.co/rK3zv5TW/image.jpg"></div>
+        <div class="foto-contenedor"><img src="https://i.ibb.co/847NsCF5/image.jpg"></div>
+        <div class="foto-contenedor"><img src="https://i.ibb.co/Mk1tK5MD/image.jpg"></div>
+        <div class="foto-contenedor"><img src="https://i.ibb.co/QvQLjyhY/image.jpg"></div>
+        <div class="foto-contenedor"><img src="https://i.ibb.co/MDyJwW5c/image.jpg"></div>
+        <div class="foto-contenedor"><img src="https://i.ibb.co/xqz8q8bP/image.jpg"></div>
+        <div class="foto-contenedor"><img src="https://i.ibb.co/prZ3dqz5/image.jpg"></div>
+        <div class="foto-contenedor"><img src="https://i.ibb.co/dwy6MshC/image.jpg"></div>
+        <div class="foto-contenedor"><img src="https://i.ibb.co/HfxXM3Ws/image.jpg"></div>
     </div>
 </body>
 </html>
