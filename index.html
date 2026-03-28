@@ -2,30 +2,82 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Menú - Fast Food Vargas</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.3/photoswipe.min.css">
+    
     <style>
-        body { font-family: 'Segoe UI', sans-serif; text-align: center; background: #1a1a1a; color: white; margin: 0; padding: 20px; }
-        h1 { color: #ffcc00; }
-        .galeria { display: flex; flex-direction: column; align-items: center; gap: 20px; }
-        .foto-contenedor { width: 100%; max-width: 500px; background: #2a2a2a; padding: 10px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
-        img { width: 100%; height: auto; border-radius: 10px; display: block; }
-        p { margin-top: 10px; font-weight: bold; color: #ffcc00; }
+        body { font-family: 'Segoe UI', sans-serif; text-align: center; background-color: #121212; color: #e0e0e0; margin: 0; padding: 10px; padding-bottom: 50px; }
+        h1 { color: #ffcc00; margin-top: 20px; font-size: 1.8em; }
+        .instrucciones { color: #aaaaaa; font-size: 0.9em; margin-bottom: 20px; }
+        
+        .my-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; padding: 10px; max-width: 800px; margin: 0 auto; }
+        .my-gallery a { display: block; background: #1e1e1e; padding: 5px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); transition: transform 0.2s; text-decoration: none; }
+        .my-gallery a:active { transform: scale(0.95); }
+        .my-gallery img { width: 100%; height: 140px; object-fit: cover; border-radius: 8px; display: block; }
+        
+        .btn-whatsapp { position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5); z-index: 100; display: flex; align-items: center; gap: 8px; }
     </style>
 </head>
 <body>
+
     <h1>🍔 Fast Food Vargas 🍟</h1>
-    <p>Toca las imágenes para verlas en grande</p>
-    <div class="galeria">
-        <div class="foto-contenedor"><img src="https://i.ibb.co/rK3zv5TW/image.jpg"></div>
-        <div class="foto-contenedor"><img src="https://i.ibb.co/847NsCF5/image.jpg"></div>
-        <div class="foto-contenedor"><img src="https://i.ibb.co/Mk1tK5MD/image.jpg"></div>
-        <div class="foto-contenedor"><img src="https://i.ibb.co/QvQLjyhY/image.jpg"></div>
-        <div class="foto-contenedor"><img src="https://i.ibb.co/MDyJwW5c/image.jpg"></div>
-        <div class="foto-contenedor"><img src="https://i.ibb.co/xqz8q8bP/image.jpg"></div>
-        <div class="foto-contenedor"><img src="https://i.ibb.co/prZ3dqz5/image.jpg"></div>
-        <div class="foto-contenedor"><img src="https://i.ibb.co/dwy6MshC/image.jpg"></div>
-        <div class="foto-contenedor"><img src="https://i.ibb.co/HfxXM3Ws/image.jpg"></div>
+    <p class="instrucciones">👇 Toca cualquier imagen para verla en grande y hacer zoom 👇</p>
+
+    <div class="my-gallery" id="gallery">
+        
+        <a href="https://i.ibb.co/rK3zv5TW/image.jpg" data-pswp-width="1000" data-pswp-height="1000" target="_blank">
+            <img src="https://i.ibb.co/rK3zv5TW/image.jpg" alt="Hamburguesa Doble" />
+        </a>
+
+        <a href="https://i.ibb.co/847NsCF5/image.jpg" data-pswp-width="1000" data-pswp-height="1000" target="_blank">
+            <img src="https://i.ibb.co/847NsCF5/image.jpg" alt="Hamburguesa Combo" />
+        </a>
+
+        <a href="https://i.ibb.co/Mk1tK5MD/image.jpg" data-pswp-width="1000" data-pswp-height="1000" target="_blank">
+            <img src="https://i.ibb.co/Mk1tK5MD/image.jpg" alt="Hot Dog Combo" />
+        </a>
+
+        <a href="https://i.ibb.co/QvQLjyhY/image.jpg" data-pswp-width="1000" data-pswp-height="1000" target="_blank">
+            <img src="https://i.ibb.co/QvQLjyhY/image.jpg" alt="Varios Hot Dogs" />
+        </a>
+
+        <a href="https://i.ibb.co/MDyJwW5c/image.jpg" data-pswp-width="1000" data-pswp-height="1000" target="_blank">
+            <img src="https://i.ibb.co/MDyJwW5c/image.jpg" alt="Super Combo Familiar" />
+        </a>
+
+        <a href="https://i.ibb.co/xqz8q8bP/image.jpg" data-pswp-width="1119" data-pswp-height="1600" target="_blank">
+            <img src="https://i.ibb.co/xqz8q8bP/image.jpg" alt="Menú Parte 1" />
+        </a>
+
+        <a href="https://i.ibb.co/prZ3dqz5/image.jpg" data-pswp-width="1080" data-pswp-height="1080" target="_blank">
+            <img src="https://i.ibb.co/prZ3dqz5/image.jpg" alt="Promoción y Contacto" />
+        </a>
+
+        <a href="https://i.ibb.co/dwy6MshC/image.jpg" data-pswp-width="1000" data-pswp-height="1000" target="_blank">
+            <img src="https://i.ibb.co/dwy6MshC/image.jpg" alt="Hamburguesa Cheesy" />
+        </a>
+
+        <a href="https://i.ibb.co/HfxXM3Ws/image.jpg" data-pswp-width="1000" data-pswp-height="1000" target="_blank">
+            <img src="https://i.ibb.co/HfxXM3Ws/image.jpg" alt="Hamburguesa Gourmet" />
+        </a>
+
     </div>
+
+    <a href="https://wa.me/529841853747" class="btn-whatsapp" target="_blank">
+        <span>📲 Pedir por WhatsApp</span>
+    </div>
+
+    <script type="module">
+        import PhotoSwipeLightbox from 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.3/photoswipe-lightbox.min.js';
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#gallery',
+            children: 'a',
+            pswpModule: () => import('https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.3/photoswipe.min.js')
+        });
+        lightbox.init();
+    </script>
+
 </body>
 </html>
