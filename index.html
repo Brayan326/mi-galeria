@@ -15,7 +15,7 @@
         .my-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; padding: 10px; max-width: 800px; margin: 0 auto; }
         .my-gallery a { display: block; background: #1e1e1e; padding: 5px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); transition: transform 0.2s; text-decoration: none; }
         .my-gallery a:active { transform: scale(0.95); }
-        .my-gallery img { width: 100%; height: 140px; object-fit: contain; border-radius: 12px; display: block; }
+        .my-gallery img { width: 100%; height: 140px; object-fit: cover; border-radius: 8px; display: block; }
         
         .btn-whatsapp { position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 10px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.5); z-index: 100; display: flex; align-items: center; gap: 8px; }
     </style>
@@ -59,7 +59,7 @@
 
     <a href="https://wa.me/529841853747" class="btn-whatsapp" target="_blank">
         <span>📲 Pedir por WhatsApp</span>
-    </div>
+    </a>
 
     <script type="module">
         import PhotoSwipeLightbox from 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.3/photoswipe-lightbox.min.js';
